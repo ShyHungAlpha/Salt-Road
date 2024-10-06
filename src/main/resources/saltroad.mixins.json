@@ -1,0 +1,15 @@
+{
+  "client": [
+    "ClientPacketListenerMixin",
+    "TooltipMixin",
+    "AbstractContainerScreenAccessor"
+  ],
+  "compatibilityLevel": "JAVA_21",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.0.1",
+  "mixins": [],
+  "package": "com.saltroad.mixin",
+  "required": true
+}

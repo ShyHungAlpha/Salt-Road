@@ -1,0 +1,22 @@
+{
+  "title.saltroad.config": "Salt Road Config",
+
+  "category.saltroad.general": "General",
+  "category.saltroad.tooltips": "Tooltip Stats",
+  "category.saltroad.keybinding": "Salt Road",
+
+  "key.saltroad.toggle_tooltips": "Toggle price tooltips",
+  "key.saltroad.toggle_boxed_item_tooltips": "Toggle boxed item price tooltips",
+
+  "option.saltroad.general.toggle_tooltips": "Show tooltips",
+  "option.saltroad.general.toggle_boxed_item_tooltips": "Show boxed item tooltips",
+  "option.saltroad.general.anchor_tooltips": "Anchor tooltips to the sides of the screen",
+  "option.saltroad.tooltip.showMaxPrice": "Show max price for items",
+  "option.saltroad.tooltip.showMinPrice": "Show min price for items",
+  "option.saltroad.tooltip.showAvgPrice": "Show average price for items",
+  "option.saltroad.tooltip.showAvg80Price": "Show average price of the middle 80% (exclude outliers)",
+  "option.saltroad.tooltip.showUnidAvgPrice": "Show average price for unidentified itemss",
+  "option.saltroad.tooltip.showUnidAvg80Price": "Show unidentified average price of the middle 80% (exclude outliers)",
+
+  "key.saltroad.open_config": "Open Salt Road Config"
+}

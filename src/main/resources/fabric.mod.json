@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "${mod_id}",
+	"version": "${mod_version}",
+	"name": "SaltRoad",
+	"description": "Real-time insights and historical data from the Wynncraft Trade Market.",
+	"authors": [
+		"ShyHungAlpha"
+	],
+	"contact": {
+		"homepage": "https://saltroad.app/",
+		"sources": "https://github.com/ShyHungAlpha/SaltRoad/"
+	},
+	"license": "MIT",
+	"icon": "assets/saltroad/icon-compressed.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"com.saltroad.SaltroadMod"
+		], "modmenu": [
+			"com.saltroad.config.SaltroadModMenu"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=${loader_version}",
+		"minecraft": "${minecraft_version_range}",
+		"java": ">=${java_version}",
+		"fabric-api": "*",
+		"wynntils": ">=${wynntils_version}",
+		"modmenu": ">=${modmenu_version}",
+		"cloth-config": ">=${clothconfig_version}"
+	},
+	"mixins": [
+		"saltroad.mixins.json"
+	],
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.website": "https://saltroad.app/"
+			},
+			"update_checker": false
+		}
+	}
+}
