@@ -1,5 +1,5 @@
 <center>
-<img src="https://github.com/ShyHungAlpha/SaltRoad/blob/master/icon.png?raw=true">
+<img src="https://github.com/ShyHungAlpha/Salt-Road/blob/master/icon.png?raw=true">
 <h1>Salt Road for Wynncraft</h1>
 </center>
 <p>This mod crowdsources trade market pricing data and displays detailed item values as tooltips.
