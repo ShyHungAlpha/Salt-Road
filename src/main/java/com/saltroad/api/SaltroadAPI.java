@@ -20,9 +20,6 @@ import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 public class SaltroadAPI {
-    private static final String BASE_URL = "https://www.wynnventory.com";
-    private static final String API_IDENTIFIER = "api";
-    private static final URI API_BASE_URL = createApiBaseUrl();
     private static final ObjectMapper objectMapper = createObjectMapper();
 
     public void sendTradeMarketResults(List<TradeMarketItem> marketItems) {
@@ -30,7 +27,7 @@ public class SaltroadAPI {
 
         URI endpointURI;
 
-        endpointURI = URI.create("http://127.0.0.1:5500/api/trademarket/items");
+        endpointURI = URI.create("https://salt-road.xyz/api/trademarket/items");
 
         HttpUtil.sendHttpPostRequest(endpointURI, serializeData(marketItems));
     }
@@ -48,7 +45,7 @@ public class SaltroadAPI {
 
             URI endpointURI;
 
-            endpointURI = URI.create("http://127.0.0.1:5500/api/trademarket/item/"+encodedItemName+"/price");
+            endpointURI = URI.create("https://salt-road.xyz/api/trademarket/item/"+encodedItemName+"/price");
 
             HttpResponse<String> response = HttpUtil.sendHttpGetRequest(endpointURI);
 
@@ -85,21 +82,9 @@ public class SaltroadAPI {
         }
     }
 
-    private static URI createApiBaseUrl() {
-        try {
-            return new URI(BASE_URL).resolve("/" + API_IDENTIFIER + "/");
-        } catch (URISyntaxException e) {
-            throw new RuntimeException("Invalid URL format", e);
-        }
-    }
-
     private static ObjectMapper createObjectMapper() {
         ObjectMapper mapper = new ObjectMapper();
         mapper.registerModule(new Jdk8Module());
         return mapper;
-    }
-
-    private static URI getEndpointURI(String endpoint) {
-        return API_BASE_URL.resolve(endpoint);
     }
 }
