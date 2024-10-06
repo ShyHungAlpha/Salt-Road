@@ -20,7 +20,7 @@ import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 
 public class ModUpdater {
-    private static final String LATEST_RELEASE_URL = "https://api.github.com/ShyHungAlpha/SaltRoad/releases/latest";
+    private static final String LATEST_RELEASE_URL = "https://api.github.com/ShyHungAlpha/Salt-Road/releases/latest";
     private static boolean alreadyChecked = false;
 
     private ModUpdater() { }
