@@ -8,7 +8,7 @@
   "injectors": {
     "defaultRequire": 1
   },
-  "minVersion": "0.1.0",
+  "minVersion": "0.1.1",
   "mixins": [],
   "package": "com.saltroad.mixin",
   "required": true
