@@ -1,6 +1,8 @@
+<center><a href="https://modrinth.com/mod/salt-road"><img alt="modrinth" height="40" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/available/modrinth_vector.svg"></a> <a href="https://www.curseforge.com/minecraft/mc-mods/salt-road"><img alt="curseforge" height="40" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/available/curseforge_vector.svg"></a> <a href="https://github.com/ShyHungAlpha/Salt-Road"><img alt="github" height="40" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/available/github_vector.svg"></a>
 
-![icon](https://github.com/ShyHungAlpha/Salt-Road/blob/main/icon.png?raw=true)
-<h1>Salt Road for Wynncraft</h1>
+
+<img alt="icon" src="https://raw.githubusercontent.com/ShyHungAlpha/Salt-Road/main/icon.png">
+<h1>Salt Road for Wynncraft</h1></center>
 
 <p>This mod crowdsources trade market pricing data and displays detailed item values as tooltips.
 
@@ -8,10 +10,7 @@
 
 This mod is a fork of the <a href="https://modrinth.com/mod/wynnventory">original Wynnventory mod</a>, bringing back their now removed item price tooltips with our own custom API for collecting and retrieving market data.
 
-<blockquote>
-<h3>📝 Note:</h3>
-As this mod is brand new with our own API, our price database may be incomplete/innacurate. The database will improve over time as players source more pricing data.
-</blockquote>
+🚨 Salt Road only includes features removed from the original Wynnventory mod. Unlike Wynnventory, this does not track raidpool or lootpool items. **I recommend you use both mods together and support the original Wynnventory team for their hard work.** 🚨</p>
 
 **How it works:**
 
@@ -26,8 +25,10 @@ As this mod is brand new with our own API, our price database may be incomplete/
 - Website for viewing market data
 - Display prices based on roll percentage
 
-
-🚨 Salt Road only includes features removed from the original Wynnventory mod. Unlike Wynnventory, this does not track raidpool or lootpool items. **I recommend you use both mods together and support the original Wynnventory team for their hard work.** 🚨</p>
+<blockquote>
+<h3>📝 Note:</h3>
+As this mod is brand new with our own API, our price database may be incomplete/innacurate. The database will improve over time as players source more pricing data.
+</blockquote>
 
 <br>
 <h2>Credits</h2>
