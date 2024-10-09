@@ -10,7 +10,7 @@
 
 This mod is a fork of the <a href="https://modrinth.com/mod/wynnventory">original Wynnventory mod</a>, bringing back their now removed item price tooltips with our own custom API for collecting and retrieving market data.
 
-🚨 Salt Road only includes features removed from the original Wynnventory mod. Unlike Wynnventory, this does not track raidpool or lootpool items. **I recommend you use both mods together and support the original Wynnventory team for their hard work.** 🚨</p>
+🚨 Salt Road only includes features removed from the original Wynnventory mod. It is however **not currently compatable with Wynnventory.** You may experience unexpected crashes using these together. 🚨</p>
 
 **How it works:**
 
