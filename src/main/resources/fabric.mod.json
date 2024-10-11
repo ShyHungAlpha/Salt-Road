@@ -26,10 +26,13 @@
 		"minecraft": "${minecraft_version_range}",
 		"java": ">=${java_version}",
 		"fabric-api": "*",
-		"wynntils": ">=${wynntils_version}",
 		"modmenu": ">=${modmenu_version}",
 		"cloth-config": ">=${clothconfig_version}"
 	},
+	"suggests": {
+		"wynntils": ">=${wynntils_version}",
+		"fuy_gg": "*"
+	 },
 	"mixins": [
 		"saltroad.mixins.json"
 	],
