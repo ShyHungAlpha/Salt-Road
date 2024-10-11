@@ -219,18 +219,27 @@ public abstract class TooltipMixin {
         if (priceInfo == null) {
             tooltipLines.add(formatText("No price data available yet!", ChatFormatting.RED));
         } else {
+            if (config.isShowAveragePrice() && priceInfo.getAveragePrice() != null) {
+                tooltipLines.add(formatPrice("Avg: ", priceInfo.getAveragePrice().intValue()));
+            }
+
+            if (config.isShowWeightedAvgPrice() && priceInfo.getAverageWeightedPrice() != null) {
+                tooltipLines.add(formatPrice("Weighted Avg: ", priceInfo.getAverageWeightedPrice().intValue()));
+            }
+
+            if (config.isShowRangeAvgPrice() && priceInfo.getAverageRangePrice() != null) {
+                tooltipLines.add(formatPrice("Range Avg: ", priceInfo.getAverageRangePrice().intValue()));
+            }
+
+            if (config.isShowAverage80Price() && priceInfo.getAverage80Price() != null) {
+                tooltipLines.add(formatPrice("Avg 80%: ", priceInfo.getAverage80Price().intValue()));
+            }
+
             if (config.isShowMaxPrice() && priceInfo.getHighestPrice() > 0) {
                 tooltipLines.add(formatPrice("Max: ", priceInfo.getHighestPrice()));
             }
             if (config.isShowMinPrice() && priceInfo.getLowestPrice() > 0) {
                 tooltipLines.add(formatPrice("Min: ", priceInfo.getLowestPrice()));
-            }
-            if (config.isShowAveragePrice() && priceInfo.getAveragePrice() != null) {
-                tooltipLines.add(formatPrice("Avg: ", priceInfo.getAveragePrice().intValue()));
-            }
-
-            if (config.isShowAverage80Price() && priceInfo.getAverage80Price() != null) {
-                tooltipLines.add(formatPrice("Avg 80%: ", priceInfo.getAverage80Price().intValue()));
             }
 
             if (config.isShowUnidAveragePrice() && priceInfo.getUnidentifiedAveragePrice() != null) {

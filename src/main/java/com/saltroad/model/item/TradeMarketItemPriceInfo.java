@@ -8,6 +8,12 @@ public class TradeMarketItemPriceInfo {
     @JsonProperty("average_price")
     private Double averagePrice;
 
+    @JsonProperty("harmonic_mean")
+    private Double averageWeightedPrice;
+
+    @JsonProperty("iqr_mean")
+    private Double averageRangePrice;
+
     @JsonProperty("average_mid_80_percent_price")
     private Double average80Price;
 
@@ -34,6 +40,22 @@ public class TradeMarketItemPriceInfo {
 
     public void setAveragePrice(double averagePrice) {
         this.averagePrice = averagePrice;
+    }
+
+    public Double getAverageWeightedPrice() {
+        return averageWeightedPrice;
+    }
+
+    public void setAverageWeightedPrice(double averageWeightedPrice) {
+        this.averageWeightedPrice = averageWeightedPrice;
+    }
+
+    public Double getAverageRangePrice() {
+        return averageRangePrice;
+    }
+
+    public void setAverageRangePrice(double averageRangePrice) {
+        this.averageRangePrice = averageRangePrice;
     }
 
     public Double getAverage80Price() {

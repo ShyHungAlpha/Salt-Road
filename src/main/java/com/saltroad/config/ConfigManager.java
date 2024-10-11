@@ -30,7 +30,8 @@ public class ConfigManager {
     private boolean showAverage80Price = true;
     private boolean showUnidAveragePrice = true;
     private boolean showUnidAverage80Price = true;
-
+    private boolean showWeightedAvgPrice = true;
+    private boolean showRangeAvgPrice = true;
     private ConfigManager() { }
 
     public static ConfigManager getInstance() {
@@ -54,6 +55,8 @@ public class ConfigManager {
                 this.showAverage80Price = validateValue(config.isShowAverage80Price());
                 this.showUnidAveragePrice = validateValue(config.isShowUnidAveragePrice());
                 this.showUnidAverage80Price = validateValue(config.isShowUnidAverage80Price());
+                this.showWeightedAvgPrice = validateValue(config.isShowWeightedAvgPrice());
+                this.showRangeAvgPrice = validateValue(config.isShowRangeAvgPrice());
             } catch (Exception e) {
                 SaltroadMod.error("Could not load config from: " + CONFIG_FILE, e);
                 saveConfig();
@@ -150,5 +153,21 @@ public class ConfigManager {
 
     public void setShowUnidAverage80Price(boolean showUnidAverage80Price) {
         this.showUnidAverage80Price = showUnidAverage80Price;
+    }
+
+    public boolean isShowWeightedAvgPrice() {
+        return showWeightedAvgPrice;
+    }
+
+    public void setShowWeightedAvgPrice(boolean showWeightedAvgPrice) {
+        this.showWeightedAvgPrice = showWeightedAvgPrice;
+    }
+
+    public boolean isShowRangeAvgPrice() {
+        return showRangeAvgPrice;
+    }
+
+    public void setShowRangeAvgPrice(boolean showRangeAvgPrice) {
+        this.showRangeAvgPrice = showRangeAvgPrice;
     }
 }

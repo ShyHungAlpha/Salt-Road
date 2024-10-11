@@ -50,8 +50,21 @@ public class ConfigScreen {
                 .setSaveConsumer(configManager::setShowAveragePrice)
                 .build());
 
+        tooltipsCategory.addEntry(entryBuilder.startBooleanToggle(Component.translatable("option.saltroad.tooltip.showWeightedAvgPrice"), configManager.isShowWeightedAvgPrice())
+                .setDefaultValue(true)
+                .setTooltip(Component.translatable("option.saltroad.description.showWeightedAvgPrice"))
+                .setSaveConsumer(configManager::setShowWeightedAvgPrice)
+                .build());
+
+        tooltipsCategory.addEntry(entryBuilder.startBooleanToggle(Component.translatable("option.saltroad.tooltip.showRangeAvgPrice"), configManager.isShowRangeAvgPrice())
+                .setDefaultValue(true)
+                .setTooltip(Component.translatable("option.saltroad.description.showRangeAvgPrice"))
+                .setSaveConsumer(configManager::setShowRangeAvgPrice)
+                .build());
+
         tooltipsCategory.addEntry(entryBuilder.startBooleanToggle(Component.translatable("option.saltroad.tooltip.showAvg80Price"), configManager.isShowAverage80Price())
                 .setDefaultValue(true)
+                .setTooltip(Component.translatable("option.saltroad.description.showAvg80Price"))
                 .setSaveConsumer(configManager::setShowAverage80Price)
                 .build());
 

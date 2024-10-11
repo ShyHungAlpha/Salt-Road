@@ -15,8 +15,14 @@
   "option.saltroad.tooltip.showMinPrice": "Show min price for items",
   "option.saltroad.tooltip.showAvgPrice": "Show average price for items",
   "option.saltroad.tooltip.showAvg80Price": "Show average price of the middle 80% (exclude outliers)",
-  "option.saltroad.tooltip.showUnidAvgPrice": "Show average price for unidentified itemss",
+  "option.saltroad.tooltip.showUnidAvgPrice": "Show average price for unidentified items",
   "option.saltroad.tooltip.showUnidAvg80Price": "Show unidentified average price of the middle 80% (exclude outliers)",
+  "option.saltroad.tooltip.showWeightedAvgPrice": "Show average price weighted towards cheapest prices",
+  "option.saltroad.tooltip.showRangeAvgPrice": "Show average price of the middle 50th percentile (exclude outliers)",
+
+  "option.saltroad.description.showAvg80Price": "Removes the cheapest & most expensive 10% of item prices before calculating the average price.",
+  "option.saltroad.description.showWeightedAvgPrice": "Calculates the average price weighted towards the cheapest listing prices (less sensitive to higher prices)",
+  "option.saltroad.description.showRangeAvgPrice": "Removes the 25th and 75th percentile before caluclating the average of the middle 50% price range",
 
   "key.saltroad.open_config": "Open Salt Road Config"
 }
